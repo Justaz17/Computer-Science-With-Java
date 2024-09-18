@@ -110,10 +110,10 @@ public void playGame(int rounds) {
         // Hold the highest score
 
         // Iterate over the playerScores map to find the player with the highest score
-        for (Map.Entry<String,Integer> entry: playerScores.entrySet()) {
+        for (Map.Entry<String,Integer> currentPlayersKV: playerScores.entrySet()) {
             // Output the player's name and their final score
-                String playerName = entry.getKey();
-                int score = entry.getValue();
+                String playerName = currentPlayersKV.getKey();
+                int score = currentPlayersKV.getValue();
                 System.out.println(playerName + ": " + score);
             // If the current player's score is higher than the highestScore, update the winner and highestScore
             if (score > highestScore) {

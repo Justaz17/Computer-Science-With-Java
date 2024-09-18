@@ -54,13 +54,13 @@ public class Deck {
         // Check if the deck is empty before attempting to draw a card.
         // If the deck is empty, return null to indicate that no more cards are available.
         if(deck.isEmpty())
+            // Deck is empty, no more cards to draw
             return null;
                 else {
+            // Remove and return the last card in the list (simulating drawing from the top of the deck).
+            // The remove() method both removes the card from the deck and returns it.
             return deck.remove(deck.size() - 1);
         }
-        // Deck is empty, no more cards to draw
-        // Remove and return the last card in the list (simulating drawing from the top of the deck).
-                // The remove() method both removes the card from the deck and returns it.
 
     }
 

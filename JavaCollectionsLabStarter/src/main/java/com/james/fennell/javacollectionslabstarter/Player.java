@@ -67,6 +67,6 @@ int total = 0;
     @Override
     public String toString() {
         // Return the player's name and their hand
-        return name + "drew: " + hand;
+        return name + " drew: " + hand;
     }
 }
