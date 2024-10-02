@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // Create an instance of BinarySearchTree for Integer
         BinarySearchTree<Integer> intTree = new BinarySearchTree<>();
+        AVLTree<Integer> avlTree = new AVLTree<>();
         // Insert several integer values into the tree
         intTree.insert(50);
         intTree.insert(30);
@@ -33,5 +34,31 @@ public class Main {
         // Call inOrder traversal method to print the Person objects in order by age
         System.out.println("\nIn-order Traversal (Persons by ID):");
         personTree.inOrder(personTree.root); // Output: Bob, Alice, Charlie (sorted by age)
+        avlTree.insert(10);
+        avlTree.insert(103);
+        avlTree.insert(14);
+        avlTree.insert(157);
+        avlTree.insert(13);
+        avlTree.insert(87);
+        avlTree.insert(75);
+        avlTree.insert(52);
+        avlTree.insert(49);
+        avlTree.insert(72);
+        avlTree.insert(4);
+        avlTree.insert(1);
+        avlTree.insert(84);
+        avlTree.insert(34);
+        avlTree.insert(76);
+        avlTree.insert(79);
+        avlTree.insert(20);
+        avlTree.insert(24);
+        avlTree.insert(29);
+        avlTree.insert(33);
+
+        System.out.println("In-order Traversal:");
+        avlTree.inOrder(avlTree.root);
+
+
+
     }
 }
