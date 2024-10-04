@@ -9,6 +9,10 @@ public class Main {
         System.out.println("In-order Traversal:");
         tree.inOrder(tree.root);
         // Output should be: 4 2 5 1 3 //
+        System.out.println("Pre-order Traversal:");
+        tree.preOrder(tree.root);
+        System.out.println("Post-order Traversal:");
+        tree.postOrder(tree.root);
     }
 
 }
